@@ -21,7 +21,7 @@ while True:
         Id, conf = recognizer.predict(gray[y:y+h,x:x+w])
         if(conf<50):
             if(Id==1):
-                Id="Bikesh"
+                Id="Your Name"
         else:
             Id="Unknown"
         cv2.putText(im,str(Id), (x,y+h),fontface,2,(255,0,0),3)
